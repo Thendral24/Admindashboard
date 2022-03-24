@@ -1,0 +1,29 @@
+
+<h2 class="text-center "> {{title}}</h2>
+    
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Servicename</th>
+            <th>Duration </th>
+            <th>Service Provided Centername</th>
+            <th>Description</th>
+            <th>Actions </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let service of services">
+            <td>{{service.servicename}}</td>
+            <td>{{service.duration}}</td>
+            <td>{{service.centername}}</td>
+            <td>{{service.description}}</td>
+            <td> 
+              
+               <button (click)="updateService(service.id)" class="btn btn-info" >Update</button>
+               <button (click)="deleteService(service.id)" class="btn btn-danger" >Delete</button>
+               
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    

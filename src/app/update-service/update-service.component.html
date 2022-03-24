@@ -1,0 +1,46 @@
+<div class="col-md-6 offset-md-3">
+
+    <h3> Update Service </h3>
+    <form (ngSubmit) = "OnSubmit()">
+    
+        <div class="form-group">
+            <label> Service Name</label>
+            <input type="text" 
+              class="form-control"
+               id="servicename" 
+              [(ngModel)] = "service.servicename" 
+              name="centername">
+        </div>
+    
+        <div class="form-group">
+            <label> Duration </label>
+            <input type="text" 
+              class="form-control"
+               id="duration" 
+              [(ngModel)] = "service.duration" 
+              name="duration">
+        </div>
+    
+        <div class="form-group">
+            <label> Center Name </label>
+            <input type="text" 
+              class="form-control"
+               id="centername" 
+              [(ngModel)] = "service.centername" 
+              name="centername">
+        </div>
+    
+    
+        <div class="form-group">
+            <label> Description </label>
+            <input type="text" 
+              class="form-control"
+               id="description" 
+              [(ngModel)] = "service.description" 
+              name="description">
+        </div>
+        
+        <button class="btn btn-success" type="submit"> Submit</button>
+    </form>
+    </div>
+
