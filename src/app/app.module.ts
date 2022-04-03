@@ -14,6 +14,14 @@ import { UserListComponent } from './user-list/user-list.component';
 import { CreateServiceComponent } from './create-service/create-service.component';
 import { UpdateServiceComponent } from './update-service/update-service.component';
 import { DeleteServiceComponent } from './delete-service/delete-service.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { AdminorUserComponent } from './adminor-user/adminor-user.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+
+
+
+
 
 
 @NgModule({
@@ -28,11 +36,20 @@ import { DeleteServiceComponent } from './delete-service/delete-service.componen
     UserListComponent,
     CreateServiceComponent,
     UpdateServiceComponent,
-    DeleteServiceComponent
+    DeleteServiceComponent,
+    NavigationComponent,
+    AdminorUserComponent,
+    DashboardComponent,
+    AdminLoginComponent,
+
+  
+    
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    
     FormsModule,
     HttpClientModule
   ],
